@@ -48,9 +48,8 @@ class Signup extends Component {
         );
     }
 }
-function mapStateToProps({ auth }) {
-    console.log(auth.errorMessage);
-    return { errorMessage: auth.errorMassage };
+function mapStateToProps(state) {
+    return { errorMessage: state.auth.errorMassage };
 }
 // export default connect(mapStateToProps, { signup })(
 //     reduxForm({ form: 'signup' })(Signup)

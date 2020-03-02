@@ -48,9 +48,8 @@ class Login extends Component {
         );
     }
 }
-function mapStateToProps({ auth }) {
-    console.log(auth.errorMessage);
-    return { errorMessage: auth.errorMassage };
+function mapStateToProps(state) {
+    return { errorMessage: state.auth.errorMassage };
 }
 // export default connect(mapStateToProps, { login })(
 //     reduxForm({ form: 'login' })(Login)

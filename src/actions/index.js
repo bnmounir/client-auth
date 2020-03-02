@@ -6,7 +6,11 @@ export const AUTH_ERROR = 'AUTH_ERROR';
 // action creators
 export const signup = (formProps, callback) => async dispatch => {
     try {
-        const res = await axios.post('http://localhost:4000/signup', formProps);
+        const res = await axios.post(
+            'https://server-api-for-testing-auth.appspot.com/signup',
+            formProps
+        );
+
         dispatch({
             type: AUTH_USER,
             payload: res.data.token
@@ -16,14 +20,17 @@ export const signup = (formProps, callback) => async dispatch => {
     } catch (e) {
         dispatch({
             type: AUTH_ERROR,
-            payload: "email or password couldn't be processed"
+            payload: e.response.data.error || 'an error occurred'
         });
     }
 };
 
 export const login = (formProps, callback) => async dispatch => {
     try {
-        const res = await axios.post('http://localhost:4000/login', formProps);
+        const res = await axios.post(
+            'https://server-api-for-testing-auth.appspot.com/login',
+            formProps
+        );
         dispatch({
             type: AUTH_USER,
             payload: res.data.token
@@ -33,7 +40,7 @@ export const login = (formProps, callback) => async dispatch => {
     } catch (e) {
         dispatch({
             type: AUTH_ERROR,
-            payload: "email or password couldn't be processed"
+            payload: e.response.data.error || 'an error occurred'
         });
     }
 };

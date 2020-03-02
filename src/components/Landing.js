@@ -5,7 +5,7 @@ const Landing = () => {
         <>
             <div style={{ textAlign: 'center' }}>
                 <h1>Welcome</h1>
-                <p>This app is for educational purposes only</p>
+                <p>This app is for educational purposes only.</p>
             </div>
             <br />
             <br />
@@ -34,14 +34,14 @@ const Landing = () => {
                             Component based web app, all the navigation is
                             handled with react-router.
                         </td>
-                        <td>library to framework</td>
+                        <td>Library to Framework</td>
                     </tr>
                     <tr>
                         <td>Redux, Redux Form</td>
                         <td>
                             state management and all data flows through redux.
                         </td>
-                        <td>library</td>
+                        <td>Library</td>
                     </tr>
                     <tr>
                         <td>JSON Web Token</td>
@@ -80,25 +80,25 @@ const Landing = () => {
                             node runtime environment and Express for building
                             the REST API
                         </td>
-                        <td>runtime, framework</td>
+                        <td>Runtime, Framework</td>
                     </tr>
                     <tr>
-                        <td>Passport, local and jwt strategies</td>
+                        <td>Passport, Local and Jwt strategies</td>
                         <td>
                             the jwt strategy handles the authentication of users
                             on the server through a token while the local
                             strategy handles it through email and password
                         </td>
-                        <td>middleware</td>
+                        <td>Middleware</td>
                     </tr>
                     <tr>
-                        <td>bcrypt</td>
+                        <td>Bcrypt</td>
                         <td>
                             hashes the password before storing them in the
                             database, also does comparison of hashes during the
                             login process
                         </td>
-                        <td>library</td>
+                        <td>Library</td>
                     </tr>
                 </tbody>
             </table>
@@ -123,7 +123,7 @@ const Landing = () => {
                     <tr>
                         <td>MongoDB Atlas</td>
                         <td>a cloud database service deployed on AWS</td>
-                        <td>database service</td>
+                        <td>Database Service</td>
                     </tr>
                     <tr>
                         <td>Mongoose</td>
@@ -131,7 +131,7 @@ const Landing = () => {
                             makes interactions between Node and MongoDB much
                             easier
                         </td>
-                        <td>ODM (object document mapper)</td>
+                        <td>ODM (Object Document Mapper)</td>
                     </tr>
                 </tbody>
             </table>

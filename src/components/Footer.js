@@ -10,10 +10,10 @@ export default function Footer() {
                 <div className='container'>
                     <div className='row'>
                         <div className='col l6 s12'>
-                            <h5 className='white-text'>Developer's note:</h5>
+                            <h5 className='white-text'>Developer's Note:</h5>
                             <p className='grey-text text-lighten-4'>
                                 This work is part of a series of self
-                                development projects and courses, promoting the
+                                development projects and courses, promoting some
                                 know-how in terms of technologies, strategies
                                 and architecture design.
                             </p>

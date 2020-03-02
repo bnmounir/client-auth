@@ -37,7 +37,7 @@ class Header extends Component {
                 <nav className='blue-grey darken-4'>
                     <div className='nav-wrapper container'>
                         <Link className='brand-logo' to='/'>
-                            Redux auth
+                            Redux Auth
                         </Link>
                         <a
                             href='#a'
