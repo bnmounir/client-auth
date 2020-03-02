@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 import Header from './Header';
 import Landing from './Landing';
@@ -12,7 +12,7 @@ import Footer from './Footer';
 function App() {
     return (
         <>
-            <BrowserRouter>
+            <Router>
                 <div style={{ flex: '1 0 auto' }}>
                     <Header />
                     <main className='container'>
@@ -21,10 +21,11 @@ function App() {
                         <Route exact path='/features' component={Features} />
                         <Route exact path='/logout' component={Logout} />
                         <Route exact path='/login' component={Login} />
+                        <Router exact path='*' component={Landing} />
                     </main>
                 </div>
                 <Footer />
-            </BrowserRouter>
+            </Router>
         </>
     );
 }
