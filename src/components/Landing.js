@@ -15,7 +15,7 @@ const Landing = () => {
             <br />
             <h5>1. Client</h5>
             <p>
-                <a href='https://github.com/bnmounir/server-api'>Code</a>
+                <a href='https://github.com/bnmounir/client-auth'>Code</a>
             </p>
             <br />
             <table className='striped centered responsive-table'>
